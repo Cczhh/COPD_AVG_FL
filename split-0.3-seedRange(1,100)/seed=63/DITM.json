@@ -1,0 +1,89 @@
+[
+    {
+        "ditm1": {
+            "Not sick": {
+                "precision": 0.45454545454545453,
+                "recall": 0.5555555555555556,
+                "f1-score": 0.5,
+                "support": 9.0
+            },
+            "sick": {
+                "precision": 0.6,
+                "recall": 0.5,
+                "f1-score": 0.5454545454545454,
+                "support": 12.0
+            },
+            "accuracy": 0.5238095238095238,
+            "macro avg": {
+                "precision": 0.5272727272727272,
+                "recall": 0.5277777777777778,
+                "f1-score": 0.5227272727272727,
+                "support": 21.0
+            },
+            "weighted avg": {
+                "precision": 0.5376623376623376,
+                "recall": 0.5238095238095238,
+                "f1-score": 0.525974025974026,
+                "support": 21.0
+            }
+        }
+    },
+    {
+        "ditm2": {
+            "Not sick": {
+                "precision": 0.6666666666666666,
+                "recall": 0.64,
+                "f1-score": 0.6530612244897959,
+                "support": 25.0
+            },
+            "sick": {
+                "precision": 0.47058823529411764,
+                "recall": 0.5,
+                "f1-score": 0.48484848484848486,
+                "support": 16.0
+            },
+            "accuracy": 0.5853658536585366,
+            "macro avg": {
+                "precision": 0.5686274509803921,
+                "recall": 0.5700000000000001,
+                "f1-score": 0.5689548546691403,
+                "support": 41.0
+            },
+            "weighted avg": {
+                "precision": 0.5901482544237207,
+                "recall": 0.5853658536585366,
+                "f1-score": 0.5874172285322111,
+                "support": 41.0
+            }
+        }
+    },
+    {
+        "ditm3": {
+            "Not sick": {
+                "precision": 0.6333333333333333,
+                "recall": 0.59375,
+                "f1-score": 0.6129032258064516,
+                "support": 32.0
+            },
+            "sick": {
+                "precision": 0.59375,
+                "recall": 0.6333333333333333,
+                "f1-score": 0.6129032258064516,
+                "support": 30.0
+            },
+            "accuracy": 0.6129032258064516,
+            "macro avg": {
+                "precision": 0.6135416666666667,
+                "recall": 0.6135416666666667,
+                "f1-score": 0.6129032258064516,
+                "support": 62.0
+            },
+            "weighted avg": {
+                "precision": 0.6141801075268817,
+                "recall": 0.6129032258064516,
+                "f1-score": 0.6129032258064516,
+                "support": 62.0
+            }
+        }
+    }
+]
