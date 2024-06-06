@@ -64,7 +64,7 @@ def getDitmData(basePath, seed):
     with open(f"{basePath}/seed={seed}/DITM.json", "r") as file:
         data = json.load(file)
         for client in data:
-            value = list(client.values())[0]  # get value
+            value = list(client.values())[0]  # get values
             # print(value)
             DITM_AccuracyList.append(value['accuracy'])
             DITM_PrecisionList.append(value['macro avg']['precision'])
