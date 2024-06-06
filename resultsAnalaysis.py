@@ -48,7 +48,7 @@ print("AVG_FL_Recall_95%:\t", stats.norm.interval(0.95, loc=np.mean(FL_RecallLis
 print("AVG_FL_F1Score_95%:\t", stats.norm.interval(0.95, loc=np.mean(FL_F1ScoreList), scale=stats.sem(FL_F1ScoreList)))
 
 ##################################
-# DITM平均
+# DITM Experimental code
 ##################################
 
 # Array where the experimental data is stored in the json file  --DITM
