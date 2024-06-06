@@ -25,8 +25,8 @@ def getFlData(basePath, seed, fileName):
 basePath = './split-0.3-seedRange(1,100)'
 
 
-# 读出的json文件里 macro avg数据，所存放的数组  --AvgFl
-FL_AccuracyList = []  # fl中三个客户端accuracy值保存位置
+# Array where the experimental data is stored in the json file --AvgFL
+FL_AccuracyList = []  # Location where the three client accuracies are stored in FL
 FL_PrecisionList = []
 FL_RecallList = []
 FL_F1ScoreList = []
@@ -48,23 +48,23 @@ print("AVG_FL_Recall_95%:\t", stats.norm.interval(0.95, loc=np.mean(FL_RecallLis
 print("AVG_FL_F1Score_95%:\t", stats.norm.interval(0.95, loc=np.mean(FL_F1ScoreList), scale=stats.sem(FL_F1ScoreList)))
 
 ##################################
-# 计算DITM平均
+# DITM平均
 ##################################
 
-# 读出的json文件里 macro avg数据，所存放的数组  --DITM
-DITM_AccuracyList = []  # DITM中三个客户端accuracy值保存位置
+# Array where the experimental data is stored in the json file  --DITM
+DITM_AccuracyList = []  # Location where the three client accuracy values are stored in DITM
 DITM_PrecisionList = []
 DITM_RecallList = []
 DITM_F1ScoreList = []
 
 
-# 把json文件的 macro avg数据读到对应的数组
+# Read macro avg data from json file into the corresponding array
 def getDitmData(basePath, seed):
 
     with open(f"{basePath}/seed={seed}/DITM.json", "r") as file:
         data = json.load(file)
         for client in data:
-            value = list(client.values())[0]  # 拿到value值
+            value = list(client.values())[0]  # get value
             # print(value)
             DITM_AccuracyList.append(value['accuracy'])
             DITM_PrecisionList.append(value['macro avg']['precision'])
